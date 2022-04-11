@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Hero from '../components/Hero';
 
 
 
@@ -14,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="relative container flex flex-col bg-black h-screen">
-        
+        <Hero />
         <div className="bg-black text-white h-full flex flex-col">
          
         </div>
