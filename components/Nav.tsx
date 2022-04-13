@@ -13,10 +13,11 @@ export default function Nav() {
 const [open, setOpen] = useState(false)
 
   return (
-    <nav className="relative container p-6 w-full h-full  bg-black text-offwhite overflow-scroll " >
+    <nav className='relative p-6 w-full bg-black text-offwhite overflow-scroll overflow-y-visible ' >
           <div className="flex items-center justify-between">
             <div className="pt-2">
-              <Image src={Logo} alt="The Logo" />
+              <Link href='/'> 
+              <a> <Image src={Logo} alt="The Logo" /> </a></Link>
             </div>
 
             <div className="hidden space-x-6 md:flex">

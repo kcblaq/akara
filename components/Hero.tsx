@@ -22,39 +22,40 @@ export default function Hero() {
           <Image src={arrow} alt='Coiled arrow' />
         </div>
         <p className='text-center text-gray text-2xl md:text-left mt-10'> Welcome to Akara marketplace, you can buy and sell awesome artwork to enjoy cool feature form us.</p>
-        <div className='flex mt-6 rounded-3xl'>
-          <input type='text' placeholder='Enter your email address to be notified when we launch' style={{ width: '80%', padding: 20 }}
+        <div className='flex mt-6 rounded-xl bg-white px-2 justify-center items-center'>
+          <input type='text' placeholder='Enter your email address to be notified when we launch' className='py-5 px-2' style={{ width: '80%', }}
           />
-          <Button variant='contained' className='bg-primary capitalize'> Subscribe</Button>
+          <Button variant='contained' className='bg-primary capitalize h-10'> Subscribe</Button>
 
         </div>
-        <div className='flex justify-around mt-10'>
-          <div> <Typography className='text-5xl font-semibold'> 30 </Typography>  <Typography className='text-faint text-2xl font-normal'>Days </Typography>
+        <div className='flex space-x-4 md:justify-around mt-10 '>
+          <div> <Typography className='text-3xl md:text-5xl font-semibold'> 30 </Typography>  <Typography className='text-faint text-2xl font-normal'>Days </Typography>
 
           </div>
-          <div> <Typography className='text-5xl font-semibold'> 10 </Typography> <Typography className='text-faint text-2xl font-normal'> Hours </Typography> </div>
-          <div> <Typography className='text-5xl font-semibold'> 20 </Typography> <Typography className='text-faint text-2xl font-normal'> Seconds</Typography> </div>
+          <div> <Typography className='text-3xl md:text-5xl font-semibold'> 10 </Typography> <Typography className='text-faint text-2xl font-normal'> Hours </Typography> </div>
+          <div> <Typography className='text-3xl md:text-5xl font-semibold'> 20 </Typography> <Typography className='text-faint text-2xl font-normal'> Seconds</Typography> </div>
         </div>
       </div>
-      {/* <div className='hidden md:block '>
-    <Image src={arrow} alt='Coiled arrow' className='absolute top-20' />
-      </div> */}
 
-      <div className="flex overflow-x-auto w-full mt-10 flex-col text-white md:w-200 md:ml-20 md:flex-row md:overflow-x-scroll">
-        <div className='flex flex-col w-full overflow-scroll'><Image src={Comingsoon} height={424} width={362} alt='coming soon' />
-          <div className='bg-lightblack w-full md:pb-8'>
+      <Box className="flex w-full mt-10 flex-col text-white md:ml-20 md:flex-row space-x-5 "
+      sx={{width:{xs:'100%', sm:'100%',md:'300',lg:'300'},overflow:'scroll'}}
+      >
+        <div className='flex flex-col overflow-scroll md:w-96 '><Image src={Comingsoon} height={424} width={362} alt='coming soon' />
+          <div className='bg-lightblack w-full md:pb-6'>
             <Typography className='mt-5 text-2xl ml-10 md:mt-0'> Coming Soon</Typography>
             <Typography className='mt-2 text-2xl ml-10 text-akara'> Akara Market </Typography>
           </div>
         </div>
-        <div className='flex flex-col w-full  overflow-scroll'><Image src={Comingsoonhalf} height={424} width={362} alt='coming soon' />
-          <div className='bg-white w-full md:pb-8'>
+
+        <div className='flex flex-col overflow-scroll md:w-96 '><Image src={Comingsoonhalf} height={424} width={362} alt='coming soon' />
+          <div className='bg-white w-full md:pb-6'>
             <Typography className='mt-5 text-black text-2xl ml-10 md:mt-0'> Coming Soon</Typography>
             <Typography className='mt-2 text-2xl ml-10 text-akara'> Akara Market </Typography>
           </div>
         </div>
+      </Box>
 
-      </div>
+      
     </div>
   )
 }
