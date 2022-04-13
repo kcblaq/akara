@@ -37,7 +37,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <Box className="flex w-full mt-10 flex-col text-white md:ml-20 md:flex-row space-x-5 "
+      <Box className="flex w-full mt-10 flex-col text-white md:ml-20 md:flex-row space-x-8 "
       sx={{width:{xs:'100%', sm:'100%',md:'300',lg:'300'},overflow:'scroll'}}
       >
         <div className='flex flex-col overflow-scroll md:w-96 '><Image src={Comingsoon} height={424} width={362} alt='coming soon' />
