@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <Box sx={{p:4}}>
+    <Box sx={{p:4,minHeight:'100vh'}}>
         <Typography variant='h3'>
              Akara Marketplace 
              </Typography>
